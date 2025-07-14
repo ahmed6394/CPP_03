@@ -16,11 +16,6 @@
 
 class ScavTrap : public ClapTrap
 {
-    protected:
-        std::string name;
-        unsigned int hitPoint;
-        unsigned int energyPoint;
-        unsigned int attackDamage;
     public:
         ScavTrap(); //default constructor
         ScavTrap(const std::string& name); // parameterize constructor
@@ -31,5 +26,3 @@ class ScavTrap : public ClapTrap
         void attack(const std::string& target); // oveerride claptrap's attack
         void guardGate();
 };
-
-
