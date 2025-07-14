@@ -4,7 +4,7 @@ VAL = valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes
 SRC = main.cpp ClapTrap.cpp
 OBJ = $(SRC:%.cpp=%.o)
 
-NAME = file
+NAME = ClapTrap
 
 all: $(NAME)
 
