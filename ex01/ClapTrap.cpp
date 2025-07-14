@@ -20,7 +20,7 @@ ClapTrap::ClapTrap(): name("default"), hitPoint(10), energyPoint(10), attackDama
 // Parametrized constructor
 ClapTrap::ClapTrap(const std::string& name): name(name), hitPoint(10), energyPoint(10), attackDamage(0)
 {
-    std::cout << "ClapTrap " << name << " contructed!\n";
+    std::cout << "ClapTrap " << name << " constructed!\n";
 }
 
 // copy constructor

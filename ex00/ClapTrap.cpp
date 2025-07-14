@@ -12,22 +12,22 @@
 
 #include "ClapTrap.hpp"
 
-ClapTrap::ClapTrap(): name("default"), hitPoint(10), energyPoint(10), attackDamage(0)
+ClapTrap::ClapTrap(): name("default_Clap"), hitPoint(10), energyPoint(10), attackDamage(0)
 {
-    std::cout << "Default constructor called\n";
+    std::cout << "ClapTrap Default constructor called" << name << "\n";
 }
 
 // Parametrized constructor
 ClapTrap::ClapTrap(const std::string& name): name(name), hitPoint(10), energyPoint(10), attackDamage(0)
 {
-    std::cout << "ClapTrap " << name << " contructed!\n";
+    std::cout << "ClapTrap Constructor called for " << name << "\n";
 }
 
 // copy constructor
 ClapTrap::ClapTrap(const ClapTrap& obj)
 {
     *this = obj;
-    std::cout << "Copy constructor called for " << name << "\n";
+    std::cout << "ClapTrap copy constructor called for " << name << "\n";
 }
 
 // Copy assignment operator
@@ -40,25 +40,21 @@ ClapTrap& ClapTrap::operator=(const ClapTrap& obj)
         energyPoint = obj.energyPoint;
         attackDamage = obj.attackDamage;
     }
-    std::cout << "Copy assignment operator called\n";
+    std::cout << "ClapTrap copy assignment operator called for" << name << "\n";
     return *this;
 }
 
 //destructor
 ClapTrap::~ClapTrap()
 {
-    std::cout << "ClapTrap " << name << " destroyed!\n";
+    std::cout << "ClapTrap destructor called for " << name << "\n";
 }
 
 void ClapTrap::attack(const std::string& target)
 {
     if (hitPoint <= 0 || energyPoint <= 0)
     {
-        std::cout << name << " can't attack! ";
-        if (hitPoint <= 0)
-            std::cout <<"No Hit Point left!\n";
-        else
-            std::cout << "No energy left!\n";
+        std::cout << "ClapTrap " << name << " has no energy or health to attack!\n";
         return;
     }
     energyPoint--;
@@ -70,7 +66,7 @@ void ClapTrap::takeDamage(unsigned int amount)
 {
     unsigned int actualDamage = (amount > hitPoint) ? hitPoint : amount;
     hitPoint -= actualDamage;
-    std::cout << name << " take " << actualDamage << " damage! "
+    std::cout << "ClapTrap " << name << " take " << actualDamage << " damage! "
                 << hitPoint << " Hit Point remaining.\n";
 }
 
@@ -78,16 +74,12 @@ void ClapTrap::beRepaired(unsigned int amount)
 {
     if (hitPoint <= 0 || energyPoint <= 0)
     {
-        std::cout << name << " can't repair! ";
-        if(hitPoint <= 0)
-            std::cout << "No HP left!\n";
-        else
-            std::cout << "No energy left!\n";
+        std::cout << "ClapTrap " << name << " can't repair!. No energy or HP left\n";
         return;
     }
     energyPoint--;
     hitPoint += amount;
-    std::cout << name << " repairs itself, regainng " << amount
+    std::cout << "ClapTrap " << name << " repairs itself, regainng " << amount
                 << " HP! Now at " << hitPoint << " HP.\n";
 }
 

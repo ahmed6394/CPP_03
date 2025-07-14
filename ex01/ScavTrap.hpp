@@ -10,3 +10,26 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#pragma once
+
+#include "ClapTrap.hpp"
+
+class ScavTrap : public ClapTrap
+{
+    protected:
+        std::string name;
+        unsigned int hitPoint;
+        unsigned int energyPoint;
+        unsigned int attackDamage;
+    public:
+        ScavTrap(); //default constructor
+        ScavTrap(const std::string& name); // parameterize constructor
+        ScavTrap(const ScavTrap& obj); // copy constructor
+        ScavTrap& operator=(const ScavTrap& obj); // assignment operator 
+        ~ScavTrap(); // destructor
+
+        void attack(const std::string& target); // oveerride claptrap's attack
+        void guardGate();
+};
+
+
