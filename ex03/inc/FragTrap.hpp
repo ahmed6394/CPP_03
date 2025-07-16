@@ -6,13 +6,13 @@
 /*   By: gahmed <gahmed@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/15 12:48:39 by gahmed            #+#    #+#             */
-/*   Updated: 2025/07/16 13:00:56 by gahmed           ###   ########.fr       */
+/*   Updated: 2025/07/16 14:31:24 by gahmed           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ClapTrap.hpp"
 
-class FragTrap : public ClapTrap
+class FragTrap : virtual public ClapTrap
 {
 	public:
 		FragTrap(); // Default constructor

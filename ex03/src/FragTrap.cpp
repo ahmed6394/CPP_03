@@ -6,11 +6,11 @@
 /*   By: gahmed <gahmed@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/15 12:48:25 by gahmed            #+#    #+#             */
-/*   Updated: 2025/07/16 13:22:42 by gahmed           ###   ########.fr       */
+/*   Updated: 2025/07/16 14:33:16 by gahmed           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "FragTrap.hpp"
+#include "../inc/FragTrap.hpp"
 
 // Default constructor
 FragTrap::FragTrap() : ClapTrap("Default_Frag")

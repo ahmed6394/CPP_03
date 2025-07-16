@@ -6,11 +6,11 @@
 /*   By: gahmed <gahmed@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 13:37:42 by gahmed            #+#    #+#             */
-/*   Updated: 2025/07/16 13:20:14 by gahmed           ###   ########.fr       */
+/*   Updated: 2025/07/16 14:19:37 by gahmed           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ScavTrap.hpp"
+#include "../inc/ScavTrap.hpp"
 
 //default constructor
 ScavTrap::ScavTrap() : ClapTrap("Default_Scav")

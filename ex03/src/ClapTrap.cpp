@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ClapTrap.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gahmed <gahmed@student.42heilbronn.de>     +#+  +:+       +#+        */
+/*   By: gahmed <gahmed@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 11:15:50 by gahmed            #+#    #+#             */
-/*   Updated: 2025/07/14 11:15:50 by gahmed           ###   ########.fr       */
+/*   Updated: 2025/07/16 15:15:58 by gahmed           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ClapTrap.hpp"
+#include "../inc/ClapTrap.hpp"
 
 ClapTrap::ClapTrap(): name("default"), hitPoint(10), energyPoint(10), attackDamage(0)
 {

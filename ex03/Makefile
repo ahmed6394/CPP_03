@@ -1,7 +1,7 @@
 CC = c++
 CPPFLAGS = -Wall -Wextra -Werror -std=c++17
 VAL = valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes
-SRC = main.cpp src/ClapTrap.cpp src/ScavTrap.cpp src/FragTrap.cpp
+SRC = main.cpp src/ClapTrap.cpp src/ScavTrap.cpp src/FragTrap.cpp src/DiamondTrap.cpp
 OBJ_DIR = obj
 OBJ = $(SRC:%.cpp=$(OBJ_DIR)/%.o)
 
