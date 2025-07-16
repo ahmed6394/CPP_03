@@ -1,10 +1,10 @@
 CC = c++
 CPPFLAGS = -Wall -Wextra -Werror -std=c++17
 VAL = valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes
-SRC = main.cpp ClapTrap.cpp ScavTrap.cpp
+SRC = main.cpp ClapTrap.cpp ScavTrap.cpp FragTrap.cpp
 OBJ = $(SRC:%.cpp=%.o)
 
-NAME = ScavTrap
+NAME = FragTrap
 
 all: $(NAME)
 

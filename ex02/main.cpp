@@ -3,31 +3,31 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gahmed <gahmed@student.42heilbronn.de>     +#+  +:+       +#+        */
+/*   By: gahmed <gahmed@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 15:06:11 by gahmed            #+#    #+#             */
-/*   Updated: 2025/07/14 15:06:11 by gahmed           ###   ########.fr       */
+/*   Updated: 2025/07/16 13:24:28 by gahmed           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ScavTrap.hpp"
+#include "FragTrap.hpp"
 
 int main( void )
 {
-    std::cout << "\n--- Creating ScavTrap 'SCAVVY' ---" << std::endl;
-    ScavTrap scav("SCAVVY");
+    std::cout << "\n--- Creating FragTrap 'FRAGGY' ---" << std::endl;
+    FragTrap frag("FRAGGY");
     std::cout << "\n--- Stats Check ---" << std::endl;
-    std::cout << "HP: " << scav.getHit()
-              << ", EP: " << scav.getEnergy()
-              << ", DMG: " << scav.getDamage() << std::endl;
-    std::cout << "\n--- ScavTrap attacks 'ENEMY' ---" << std::endl;
-    scav.attack("ENEMY");
-    std::cout << "\n--- ScavTrap takes damage ---" << std::endl;
-    scav.takeDamage(15);
-    std::cout << "\n--- ScavTrap repairs ---" << std::endl;
-    scav.beRepaired(10);
-    std::cout << "\n--- ScavTrap activates Gate Keeper mode ---" << std::endl;
-    scav.guardGate();
-    std::cout << "\n--- End of ScavTrap Test ---" << std::endl;
+    std::cout << "HP: " << frag.getHit()
+              << ", EP: " << frag.getEnergy()
+              << ", DMG: " << frag.getDamage() << std::endl;
+    std::cout << "\n--- FragTrap attacks 'BADBOT' ---" << std::endl;
+    frag.attack("BADBOT");
+    std::cout << "\n--- FragTrap takes damage ---" << std::endl;
+    frag.takeDamage(25);
+    std::cout << "\n--- FragTrap repairs ---" << std::endl;
+    frag.beRepaired(20);
+    std::cout << "\n--- FragTrap requests high five ---" << std::endl;
+    frag.highFivesGuys();
+    std::cout << "\n--- End of FragTrap Test ---" << std::endl;
     return (0);
 }

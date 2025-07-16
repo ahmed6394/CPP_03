@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gahmed <gahmed@student.42heilbronn.de>     +#+  +:+       +#+        */
+/*   By: gahmed <gahmed@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 15:06:11 by gahmed            #+#    #+#             */
-/*   Updated: 2025/07/14 15:06:11 by gahmed           ###   ########.fr       */
+/*   Updated: 2025/07/15 13:02:24 by gahmed           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 int main( void )
 {
     std::cout << "\n--- Creating ScavTrap 'SCAVVY' ---" << std::endl;
-    ScavTrap scav("SCAVVY");
+    ScavTrap scav("Scavee");
     std::cout << "\n--- Stats Check ---" << std::endl;
     std::cout << "HP: " << scav.getHit()
               << ", EP: " << scav.getEnergy()
