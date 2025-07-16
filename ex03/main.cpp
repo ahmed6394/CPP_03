@@ -6,7 +6,7 @@
 /*   By: gahmed <gahmed@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/16 13:54:53 by gahmed            #+#    #+#             */
-/*   Updated: 2025/07/16 14:27:49 by gahmed           ###   ########.fr       */
+/*   Updated: 2025/07/16 16:20:56 by gahmed           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,16 +25,22 @@ int main( void )
     dia.attack("BOT");
     std::cout << "\n--- FragTrap takes damage from DiamondTrap ---" << std::endl;
     frag.takeDamage(dia.getDamage());
+	
     std::cout << "\n--- DiamondTrap identity check ---" << std::endl;
     dia.whoAmI();
+	
     std::cout << "\n--- DiamondTrap uses ScavTrap's guardGate ---" << std::endl;
     dia.guardGate();
+	
     std::cout << "\n--- DiamondTrap uses FragTrap's highFivesGuys ---" << std::endl;
     dia.highFivesGuys();
+	
     std::cout << "\n--- DiamondTrap takes damage ---" << std::endl;
     dia.takeDamage(40);
+	
     std::cout << "\n--- DiamondTrap repairs ---" << std::endl;
     dia.beRepaired(30);
+	
     std::cout << "\n--- End of DiamondTrap Test ---" << std::endl;
     return 0;
 }

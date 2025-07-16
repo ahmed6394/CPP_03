@@ -6,7 +6,7 @@
 /*   By: gahmed <gahmed@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/16 14:18:18 by gahmed            #+#    #+#             */
-/*   Updated: 2025/07/16 15:37:36 by gahmed           ###   ########.fr       */
+/*   Updated: 2025/07/16 16:11:40 by gahmed           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,6 @@ DiamondTrap::DiamondTrap(const std::string& name) : ClapTrap(name + "_clap_name"
 	this->hitPoint = FragTrap::getHit();
 	ScavTrap tempScavTrap;
 	this->energyPoint = tempScavTrap.getEnergy();
-	// this->energyPoint = ScavTrap::getEnergy();
 	this->attackDamage = FragTrap::getDamage();
 	std::cout << "DiamondTrap constructor called " << name << "\n";
 }
@@ -47,13 +46,10 @@ DiamondTrap& DiamondTrap::operator=(const DiamondTrap& obj)
 {
 	if (this != &obj)
 	{
-		ClapTrap::operator=(obj);
-		ScavTrap::operator=(obj);
-		FragTrap::operator=(obj);
 		this->name = obj.name;
-		// this->hitPoint = obj.hitPoint;
-		// this->energyPoint = obj.energyPoint;
-		// this->attackDamage = obj.attackDamage;
+		this->hitPoint = obj.hitPoint;
+		this->energyPoint = obj.energyPoint;
+		this->attackDamage = obj.attackDamage;
 	}
 	std::cout << "DiamondTrap copy assignment operator called for " << name << "\n";
 	return *this;

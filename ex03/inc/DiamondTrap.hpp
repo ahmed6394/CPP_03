@@ -15,6 +15,8 @@
 
 class DiamondTrap : public ScavTrap, public FragTrap
 {
+	private:
+		std::string name;
 	public:
 		DiamondTrap(); // Default constructor
 		DiamondTrap(const std::string& name); // perameterize constructor
